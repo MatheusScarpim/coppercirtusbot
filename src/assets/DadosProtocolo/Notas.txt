@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PageDadosProtocolo/style2.css">
+    <title>Notificação</title>
+</head>
+<body>
+    <main>
+
+            <div class="container-main">
+                <div class="src-bar">
+                    <div class="src-bar-menu">
+                        <div class="container" onclick="toggleSidebar(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                    <div class="src-bar-logo"><img src="/PageDadosProtocolo/img/logotipobranca.png" alt="src-bar"></div>
+                    <div class="src-bar-space"></div>
+                    <div class="src-bar-perfil">
+                        <div class="sbpnome">
+                            <p>Login</p>
+                        </div>
+                        <div class="sbpimagem"><img src="/PageDadosProtocolo/img/perfilteste.png" alt="sbpimagem"></div>
+                    </div>
+                </div>
+            </div> <!-- fim da src-bar -->
+
+            <!--
+                <div class="container-main">
+                    <div class="src-bar">
+                        <div class="src-bar-logo"><img src="/PageDadosProtocolo/img/logotipobranca.png" alt="src-bar"></div>
+                        <div class="src-bar-space"></div>
+                        <div class="src-bar-perfil">
+                            <div class="sbpnome">
+                                <p>Login</p>
+                            </div>
+                            <div class="sbpimagem"><img src="/PageDadosProtocolo/img/perfilteste.png" alt="sbpimagem"></div>
+                        </div>
+                    </div>
+                </div> 
+            -->
+
+
+            <div class="tool-box">
+                <div class="content">
+
+                    <div class="notificacao-protocolo">
+                        <div class="containerid">
+                            <div class="conteudo">
+                                <div class="">
+                                    <p><%=rows[0].idprotocolo%></p>
+                                </div>
+                            </div>
+                            <div class="not-idusuariop alinha-notp">
+                                <div class="conteudo-notp">
+                                    <p>CPF:</p>
+                                    <h5><%=rows[0].cpf%></h5>
+                                </div>
+                            </div>
+                            <div class="not-idusuariop alinha-notp">
+                                <div class="conteudo-notp">
+                                    <p>Email:</p>
+                                    <h5><%=rows[0].email%></h5>
+                                </div>
+                            </div>
+                            <div class="not-idusuariop alinha-notp">
+                                <div class="calc">
+                                    <div class="conteudo-notp">
+                                        <h5>Valor da Parcela</h5>
+                                        <p>R$ <%=rows[0].vlrParcela%></p><br>
+                                        <h5>Quantidade de Parcelas</h5>
+                                        <p><%=rows[0].qtdParcelas%></p><br>
+                                        <h5>Valor Total</h5>
+                                        <p>R$ <%=rows[0].vlrTotal%></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="containerid-dir">
+                            <div class="not-idusuariop alinha-notp">
+                                <div class="conteudo-notp">
+                                    <p>Protocolo Bpm:</p>
+                                    <h5><%=rows[0].protocolo%></h5>
+                                </div>
+                            </div>
+                            <div class="not-idusuariop alinha-notp">
+                                <div class="conteudo-notp-dir">
+                                    <p>Origem:</p>
+                                    <h5><%=rows[0].origem%></h5>
+                                </div>
+                            </div>
+                            <div class="not-idusuariop alinha-notp">
+                                <div class="conteudo-notp-dir">
+                                    <p>Número:</p>
+                                    <h5><%=rows[0].numero%></h5>
+                                </div>
+                            </div>
+                            <div class="not-idusuariop alinha-notp">
+                                <div class="conteudo-notp-dir">
+                                    <p>Criado em:</p>
+                                    <h5><%=rows[0].criadoFormatado%></h5>
+                                </div>
+                            </div>
+                            <div class="not-idusuariop alinha-notp">
+                                <div class="conteudo-notp-dir">
+                                    <p>Ultimo contato:</p>
+                                    <h5><%=rows[0].ultimoFormatado%></h5>
+                                </div>
+                            </div>
+                            <div class="not-idusuariop alinha-notp">
+                                <div class="conteudo-notp-dir">
+                                    <p>Canal:</p>
+                                    <h5><%=rows[0].canal%></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div> <!-- fim da notificacao-protocolo -->
+
+            </div>
+        </div>
+
+    </main>
+    <script src="/PageDadosProtocolo/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+/*
+html ::-webkit-scrollbar {
+    width: 7px;
+}
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    border: 1px solid #111;
+    background: #00C6B9;
+}
+html ::-webkit-scrollbar-track {
+    background: #f6f6f6;
+} */
+
+.container-main {
+    width: 100%;
+    height: 100%;
+}
+
+.src-bar {
+    position: absolute;
+    width: 100%;
+    height: 12%;
+    left: 0px;
+    top: 0px;
+    display: flex;
+
+    background: #00C6B9;
+}
+
+.src-bar-logo {
+    width: 260px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.src-bar-logo img {
+    width: 110px;
+    margin-left: -100px;
+}
+
+.src-bar-menu {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.src-bar-space {
+    width: 57%;
+    height: 100%;
+}
+
+.src-bar-perfil {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.sbpimagem img {
+    width: 44px;
+    margin: 0px -35px -6px 0px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px -9px;
+}
+
+.sbpnome {
+    margin: 0px 20px;
+}
+
+.sbpnome p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px !important;
+}
+
+.tool-box {
+    position: absolute;
+    width: 100%;
+    height: 88%;
+    left: 0px;
+    top: 12%;
+    display: flex;
+
+    background: #363636;
+}
+
+.ferramentas-esquerda {
+    /* background-color: blue;
+    width: 300px;
+    height: 100%; */
+    width: 250px;
+    height: 540px;
+    position: static;
+    left: 0;
+    transition: width 0.5s ease;
+}
+
+.ferramentas-esquerda.collapsed {
+    width: 20px;
+    /* z-index: 100; */
+}
+
+.tool {
+    background-color: #363636;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tool p { width: 100px ;}
+
+#linktool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+
+    color: #fff;
+    font-weight: 500;
+
+    text-decoration: none;
+}
+
+#linktool img {
+    margin-right: 30px;
+}
+
+.tool:hover {
+    background-color: #555555;
+}
+
+/* .icon-tool {
+    background-image: url(img/homeicon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+} */
+
+.ferramentas-direita {
+    background-color: #dddddd;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.src-bar-tb {
+    background-color: #fff;
+    width: 100%;
+    height: 8%;
+    padding: 11.5px 0px 0px 30px;
+    /* Jeito porco, da pra criar uma div e colocar margin nela com o texto */
+}
+
+.content-fd {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* //////////////////////////////////////// */
+
+.content {
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.notificacao-protocolo {
+    background: linear-gradient(90deg, #101859 2.74%, #FFFFFF 2.76%);
+    box-shadow: 0px 0px 20px 0px #44444452;
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerid {
+    width: 30%;
+    height: 85%;
+    margin: 10px 5px;
+    display: inline-block;
+    align-items: center;
+    justify-content: right;
+    padding: 25px 25px;
+    /* margin-right: calc(120% - 500px + 10px); */
+}
+
+.conteudo {
+    display: inline-block;
+    max-width: 100%;
+    background-color: #e8e8e8;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px; 
+    margin-bottom: 40px;
+}
+
+.conteudo-notp p {
+    font-size: 14px;
+    color: #8A8A8A;
+}
+.conteudo-notp h5 {
+    margin-bottom: 0px;
+    color: #363636;
+}
+.calc {
+    margin: 35px 0px;
+}
+
+
+/* ///////////////////////////////////////////////////// */
+
+.conteudo-notp-dir p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0px;
+
+    color: #8A8A8A;
+}
+.conteudo-notp-dir h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 0px;
+    margin-bottom: 11px;
+
+    color: #444444;
+}
+.containerid-dir {
+    background-color: #eeeeee;
+    width: 50%;
+    height: 75%;
+    margin: 10px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    align-items: center;
+    justify-content: right;
+    padding: 25px 25px;
+    /* margin-right: calc(120% - 500px + 10px); */
+}
+.alinha-notp {
+    margin-top: 10px;
+}
+
+
+/* //////////////////////////////////////// */
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 8px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -8px) rotate(45deg);
+}

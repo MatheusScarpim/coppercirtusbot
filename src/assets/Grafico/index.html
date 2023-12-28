@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" type="imagex/png" href="/PageDadosProtocolo/img/icone.ico">
+  <link rel="stylesheet" href="/PageGrafico/stylegrafico.css">
+  <title>Exemplo HTML</title>
+</head>
+
+<body>
+
+  <div class="container-main">
+    <div class="src-bar">
+        <div class="src-bar-menu">
+            <div class="container" onclick="toggleSidebar(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="src-bar-logo"><img src="/PageDadosProtocolo/img/logotipobranca.png" alt="src-bar"></div>
+        <div class="src-bar-space"></div>
+        <div class="src-bar-perfil">
+            <div class="sbpnome">
+                <p>Login</p>
+            </div>
+            <div class="sbpimagem"><img src="/PageDadosProtocolo/img/perfilteste.png" alt="sbpimagem"></div>
+        </div>
+    </div>
+</div> <!-- fim da src-bar -->
+
+<div class="tool-box">
+    <div class="leftbox">
+        <div class="ferramentas-esquerda" id="ferramentas-esquerda">
+            <div class="div-tools">
+                <div class="tool" id="tool">
+                    <a href="/" id="linktool">
+                        <img id="imagem" src="/PageDadosProtocolo/img/homeicon.png" alt="Imagem 1"
+                            data-hover="/PageDadosProtocolo/img/homeiconative.png" style="width: 30px;">
+                        <!-- <img src="img/homeicon.png" alt="icon" style="width: 30px;"> -->
+                        <p>Visão Geral</p>
+                    </a>
+                </div>
+                <div class="tool">
+                    <a href="../Grafico" id="linktool">
+                        <img id="imagem" src="/PageDadosProtocolo/img/iconegrafico.png" style="width: 30px;">
+                        <p>Gráfico</p>
+                    </a>
+                </div>
+                <div class="tool">
+                    <a href="#" id="linktool">
+
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="ferramentas-direita">
+        <div class="content-fd">
+
+            <div class="content">
+
+              <div class="container">
+                <canvas id="myChart"></canvas>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+              <!-- <script src="https://code.jquery.com/jquery-1.9.1.js"></script> -->
+              <script src="/PageGrafico/chart.js"></script>
+              <script src="/PageGrafico/script.js"></script>
+                
+            </div>
+        </div> <!-- fim da notificacao-protocolo -->
+
+    </div>
+
+        </div>
+    </div>
+</div>
+
+
+  
+
+</body>
+
+</html>
+
+<!-- <script>
+  var ctx = document.getElementById("myChart");
+
+  var chart = ctx.getContext('2d');
+
+  chart.fillStyle = "red";
+  chart.fillRect(0, 0, 100, 200);
+</script> -->

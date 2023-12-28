@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="/PageDadosProtocolo/img/icone.ico">
+    <link rel="stylesheet" href="/PagePrincipal/style-login.css">
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="container-main">
+            <div class="src-bar">
+                <div class="src-bar-menu">
+                    <div class="container" onclick="toggleSidebar(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="src-bar-logo"><img src="/PageDadosProtocolo/img/logotipobranca.png" alt="src-bar"></div>
+                <div class="src-bar-space"></div>
+                <div class="src-bar-perfil">
+                    <div class="sbpnome">
+                        <p>Login</p>
+                    </div>
+                    <div class="sbpimagem"><img src="/PagePrincipal/img/perfilteste.png" alt="sbpimagem"></div>
+                </div>
+            </div>
+        </div> <!-- fim da src-bar -->
+
+        <div class="tool-box">
+            <div class="leftbox">
+                <div class="ferramentas-esquerda" id="ferramentas-esquerda">
+                    <div class="div-tools">
+                        <div class="tool" id="tool">
+                            <a href="/ " id="linktool">
+                                <img id="imagem" src="/PagePrincipal/img/homeicon.png" alt="Imagem 1"
+                                    data-hover="/PagePrincipal/img/homeiconative.png" style="width: 30px;">
+                                <!-- <img src="img/homeicon.png" alt="icon" style="width: 30px;"> -->
+                                <p>Visão Geral</p>
+                            </a>
+                        </div>
+                        <div class="tool">
+                            <a href="../Grafico" id="linktool">
+                                <img id="imagem" src="/PageDadosProtocolo/img/iconegrafico.png" style="width: 30px;">
+                                <p>Gráfico</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ferramentas-direita">
+                <div class="src-bar-tb">
+                    <p>Página Inicial</p>
+                </div>
+                <div class="content-fd">
+
+                    <!-- /////// Começo das notificações ///////// -->
+                    <% for (let i=0; i < rows.length; i++) { %>
+                        <div class="notificacao">
+                            <div class="container-not">
+                                <div class="not-check alinha-not">
+                                    <div class="conteudo-not">
+                                        <input type="checkbox" name="select" id="check-btn">
+                                    </div>
+                                </div>
+                                <div class="not-idusuario alinha-not">
+                                    <div class="conteudo-not">
+                                        <p>Protocolo:</p>
+                                        <h5>
+                                            <%=rows[i]._id%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-protocolo alinha-not">
+                                    <div class="conteudo-not">
+                                        <p>Protocolo Bpm:</p>
+                                        <h5>
+                                            <%=rows[i].NumProtocolo%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-origem alinha-not">
+                                    <div class="conteudo-not">
+                                        <p>Origem:</p>
+                                        <h5>
+                                            <%=rows[i].Origem%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-numero alinha-not">
+                                    <div class="conteudo-not">
+                                        <p>Número:</p>
+                                        <h5>
+                                            <%=rows[i].Numero%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-criadoem alinha-not">
+                                    <div class="conteudo-not">
+                                        <p>Criado em:</p>
+                                        <h5>
+                                            <%=rows[i].Criado%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-ultimocont alinha-not">
+                                    <div class="conteudo-not">
+                                        <p>Ultimo contato:</p>
+                                        <h5>
+                                            <%=rows[i].ultimoContato%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-canal alinha-not">
+                                    <div class="conteudo-not">
+                                        <p>Canal:</p>
+                                        <h5>
+                                            <%=rows[i].Canal%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-burgue alinha-not">
+                                    <div class="conteudo-not">
+                                        <a href="/DadosProtocolo/?id=<%=rows[i]._id%>"><img
+                                                src="/PagePrincipal/img/Hamburger_icon.svg.png" alt="conteudo-not"
+                                                style="width: 20px;"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <% } %>
+
+                            <!-- /////// Fim das notificações ///////// -->
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="/PagePrincipal/script.js"></script>
+</body>
+
+</html> <!-- Assinado: Isaque :3 -->

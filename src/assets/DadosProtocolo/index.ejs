@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/PageDadosProtocolo/style2.css">
+    <link rel="shortcut icon" type="imagex/png" href="/PageDadosProtocolo/img/icone.ico">
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <title>Notificação</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="container-main">
+            <div class="src-bar">
+                <div class="src-bar-menu">
+                    <div class="container" onclick="toggleSidebar(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="src-bar-logo"><img src="/PageDadosProtocolo/img/logotipobranca.png" alt="src-bar"></div>
+                <div class="src-bar-space"></div>
+                <div class="src-bar-perfil">
+                    <div class="sbpnome">
+                        <p>Login</p>
+                    </div>
+                    <div class="sbpimagem"><img src="/PageDadosProtocolo/img/perfilteste.png" alt="sbpimagem"></div>
+                </div>
+            </div>
+        </div> <!-- fim da src-bar -->
+
+        <div class="tool-box">
+            <div class="leftbox">
+                <div class="ferramentas-esquerda" id="ferramentas-esquerda">
+                    <div class="div-tools">
+                        <div class="tool" id="tool">
+                            <a href="/" id="linktool">
+                                <img id="imagem" src="/PageDadosProtocolo/img/homeicon.png" style="width: 30px;">
+                                <!-- <img src="img/homeicon.png" alt="icon" style="width: 30px;"> -->
+                                <p>Visão Geral</p>
+                            </a>
+                        </div>
+                        <div class="tool">
+                            <a href="../Grafico" id="linktool">
+                                <img id="imagem" src="/PageDadosProtocolo/img/iconegrafico.png" style="width: 30px;">
+                                <p>Gráfico</p>
+                            </a>
+                        </div>
+                        <div class="tool">
+                            <a href="#" id="linktool">
+
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="ferramentas-direita">
+                <div class="content-fd">
+
+                    <div class="content">
+
+                        <div class="notificacao-protocolo">
+                            <div class="containerid">
+                                <div class="conteudo">
+                                    <div class="">
+                                        <p>
+                                            <%=rows._id%>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="not-idusuariop">
+                                    <div class="conteudo-notp">
+                                        <p>CPF:</p>
+                                        <h5>
+                                            <%=rows.CPF%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-idusuariop">
+                                    <div class="conteudo-notp">
+                                        <p>Email:</p>
+                                        <h5>
+                                            <%=rows.Email%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-idusuariop">
+                                    <div class="calc">
+                                        <div class="conteudo-notp">
+                                            <h5>Valor da Parcela</h5>
+                                            <p>R$ <%=rows.ValorParcela%>
+                                            </p>
+                                            <h5>Quantidade de Parcelas</h5>
+                                            <p>
+                                                <%=rows.Parcela%>
+                                            </p>
+                                            <h5>Valor Total</h5>
+                                            <p>R$ <%=rows.Valor%>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="containerid-dir">
+                                <div class="not-idusuariop alinha-notp">
+                                    <div class="conteudo-notp-dir">
+                                        <p>Protocolo Bpm:</p>
+                                        <h5>
+                                            <%=prot.NumProtocolo%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-idusuariop alinha-notp">
+                                    <div class="conteudo-notp-dir">
+                                        <p>Origem:</p>
+                                        <h5>
+                                            <%=prot.Origem%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-idusuariop alinha-notp">
+                                    <div class="conteudo-notp-dir">
+                                        <p>Número:</p>
+                                        <h5>
+                                            <%=prot.Numero%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-idusuariop alinha-notp">
+                                    <div class="conteudo-notp-dir">
+                                        <p>Criado em:</p>
+                                        <h5>
+                                            <%=prot.Criado%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-idusuariop alinha-notp">
+                                    <div class="conteudo-notp-dir">
+                                        <p>ultimo contato:</p>
+                                        <h5>
+                                            <%=prot.ultimoContato%>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="not-idusuariop alinha-notp">
+                                    <div class="conteudo-notp-dir">
+                                        <p>Canal:</p>
+                                        <h5>
+                                            <%=prot.Canal%>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div> <!-- fim da notificacao-protocolo -->
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </main>
+    <script src="/PageDadosProtocolo/script.js"></script>
+</body>
+
+</html>

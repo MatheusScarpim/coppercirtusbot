@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" type="imagex/png" href="/PageDadosProtocolo/img/icone.ico">
+  <title>Exemplo HTML</title>
+  <link rel="stylesheet" type="text/css" href="/ScarlatBot/src/assets/Grafico/stylegrafico.css">
+</head>
+
+<body>
+
+  <div class="container-main">
+    <div class="src-bar">
+        <div class="src-bar-menu">
+            <div class="container" onclick="toggleSidebar(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div class="src-bar-logo"><img src="img/logotipobranca.png" alt="src-bar"></div>
+        <div class="src-bar-space"></div>
+        <div class="src-bar-perfil">
+            <div class="sbpnome">
+                <p>Login</p>
+            </div>
+            <div class="sbpimagem"><img src="img/perfilteste.png" alt="sbpimagem"></div>
+        </div>
+    </div>
+</div> <!-- fim da src-bar -->
+
+<div class="tool-box">
+    <div class="leftbox">
+        <div class="ferramentas-esquerda" id="ferramentas-esquerda">
+            <div class="div-tools">
+                <div class="tool" id="tool">
+                    <a href="#" id="linktool">
+                        <img id="imagem" src="img/homeicon.png" alt="Imagem 1"
+                            data-hover="img/homeiconative.png" style="width: 30px;">
+                        <!-- <img src="img/homeicon.png" alt="icon" style="width: 30px;"> -->
+                        <p>Visão Geral</p>
+                    </a>
+                </div>
+                <div class="tool">
+                    <a href="#" id="linktool">
+
+                    </a>
+                </div>
+                <div class="tool">
+                    <a href="#" id="linktool">
+
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="ferramentas-direita">
+        <div class="content-fd">
+
+            <div class="content">
+
+            <div class="notificacao-protocolo">
+                <div class="containerid">
+                    <div class="conteudo">
+                        <div class="">
+                            <p>ID: 000001</p>
+                        </div>
+                    </div>
+                    <div class="not-idusuariop">
+                        <div class="conteudo-notp">
+                            <p>CPF:</p>
+                            <h5>Valor.js</h5>
+                        </div>
+                    </div>
+                    <div class="not-idusuariop">
+                        <div class="conteudo-notp">
+                            <p>Email:</p>
+                            <h5>Valor.js</h5>
+                        </div>
+                    </div>
+                    <div class="not-idusuariop">
+                        <div class="calc">
+                            <div class="conteudo-notp">
+                                <h5>Valor da Parcela</h5>
+                                <h5>Quantidade de Parcelas</h5>
+                                <h5>Valor Total</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerid-dir">
+                    <div class="not-idusuariop alinha-notp">
+                        <div class="conteudo-notp-dir">
+                            <p>Protocolo:</p>
+                            <h5>Valor.js</h5>
+                        </div>
+                    </div>
+                    <div class="not-idusuariop alinha-notp">
+                        <div class="conteudo-notp-dir">
+                            <p>Origem:</p>
+                            <h5>Valor.js</h5>
+                        </div>
+                    </div>
+                    <div class="not-idusuariop alinha-notp">
+                        <div class="conteudo-notp-dir">
+                            <p>Número:</p>
+                            <h5>Valor.js</h5>
+                        </div>
+                    </div>
+                    <div class="not-idusuariop alinha-notp">
+                        <div class="conteudo-notp-dir">
+                            <p>Criado em:</p>
+                            <h5>Valor.js</h5>
+                        </div>
+                    </div>
+                    <div class="not-idusuariop alinha-notp">
+                        <div class="conteudo-notp-dir">
+                            <p>ultimo contato:</p>
+                            <h5>Valor.js</h5>
+                        </div>
+                    </div>
+                    <div class="not-idusuariop alinha-notp">
+                        <div class="conteudo-notp-dir">
+                            <p>Canal:</p>
+                            <h5>Valor.js</h5>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div> <!-- fim da notificacao-protocolo -->
+
+    </div>
+
+        </div>
+    </div>
+</div>
+
+  <div class="container">
+    <canvas id="myChart"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.9.1.js"></script> -->
+  <script src="/PageGrafico/chart.js"></script>
+
+
+</body>
+
+</html>
+
+<!-- <script>
+  var ctx = document.getElementById("myChart");
+
+  var chart = ctx.getContext('2d');
+
+  chart.fillStyle = "red";
+  chart.fillRect(0, 0, 100, 200);
+</script> -->
