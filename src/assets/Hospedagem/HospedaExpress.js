@@ -9,8 +9,8 @@ const userRoute = require('../API/gerarToken/TestToken');
 const userMensagem = require('../API/apiWpp/apiWpp');
 // const ScarlatMeta = require('../../../meta_modules/ScarlatMeta/WebHook/webWook')
 
-app.use('/', userRoute);
-app.use('/', userMensagem);
+// app.use('/', userRoute);
+// app.use('/', userMensagem);
 // app.use('/', ScarlatMeta)
 
 app.engine('html', ejs.renderFile);
